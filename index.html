@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-image: url('mountain.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    p {
+      text-align: justify;
+      margin-top: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+      border-top:none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      height: 50px;
+    }
+
+    .hcenter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .hleft,
+    .hright {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 100px;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #6967e994;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .bmagic {
+      background-color: #6967e994;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .bmagic:hover {
+      background-color: #282188;
+      transform: scale(1.05);
+    }
+
+    .bmagic:active {
+      background-color: #1e307e;
+      transform: scale(1);
+    }
+    .bleft {
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: 30px;
+      transform: translateY(-50%);
+    }
+
+    .bright {
+      background-color: transparent;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="hleft">
+      <button class="home">Home</button>
+      <button class="blog">Blog</button>
+      <button class="contact">Contact</button>
+    </div>
+    <div class="hcenter">
+      <div class="title">Quasars</div>
+    </div>
+    <div class="hright">
+      <div class="github">Github</div>
+      <img class="logo" src="sheldon.png" alt="abs">
+    </div>
+  </div>
+
+  <div class="middle">
+    <h1>NUKES</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, non. Magnam, quis! Mollitia voluptatum modi,
+      repellat minus aliquid voluptates recusandae totam architecto eligendi perspiciatis dolorum possimus porro
+      sapiente magni repudiandae?</p>
+    <button class="bmagic">Magic</button>
+  </div>
+
+  <!-- <button class="bleft">&#x2190;</button>
+  <button class="bright">&#8594;</button> -->
+</body>
+
+</html>
